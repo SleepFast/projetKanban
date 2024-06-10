@@ -2,9 +2,9 @@ Construire l'image Docker :
 
 `docker build -t my-mariadb-image .`
 
-Lancer le conteneur Docker :
+Lancer le container : 
 
-`docker run --rm --name=my-mariadb --detach --publish 3306:3306 my-mariadb-image`
+`docker compose up -d`
 
 # Ouvrir une session shell dans le conteneur
 docker exec -it my-mariadb bash
